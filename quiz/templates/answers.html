@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTPI Assessment Test</title>
+    {% load static %}
+    <style>
+        body{
+            background-image: url('{% static "images/bg3.jpg" %}');
+            margin: 0;
+            background-repeat: no-repeat;
+            background-size: cover ;
+            height: 50%;   
+        }
+        div{
+            width: 60%;
+            max-height: 1500px;
+            margin: 25px 0 25px 0;
+            background-color: rgb(243, 234, 234);
+            font-size: smaller;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+        <div>
+
+            {% for a in obj %}
+                <ul style="list-style-type:square" >
+                    <li>{{a.question}} <br>Answer:- {{a.answer}}</li> <br>
+                </ul>
+            {% endfor %}
+        </div>   
+</body>
+</html>
