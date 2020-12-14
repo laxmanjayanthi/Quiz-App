@@ -3,7 +3,7 @@ Tools and Technologies:
 Platform				-	Django
 Programming Language			-	Python
 Frontend 				-	HTML, CSS, JS
-Database				-	Postgresql 
+Database				-	SQLite 
 BackgroundImage refernces		-	From Google images
 
 ------------------------------------------------------------------------------------------------------
